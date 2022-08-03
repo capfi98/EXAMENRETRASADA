@@ -1,0 +1,11 @@
+unset label
+clear 
+set terminal jpeg
+set output "distancia.jpeg"
+set title "funcion distancia"
+set xlabel "tiempo (t)" 
+set ylabel "distancia (unidades)" 
+set grid
+set style data linespoints
+cd '/home/captop/ejercicio_docker/EXAMENRETRASADA' 
+plot "distanciavstiempo" u 2:1 ps 1

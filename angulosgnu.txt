@@ -1,0 +1,11 @@
+unset label
+clear 
+set terminal jpeg
+set output "ángulos.jpeg"
+set title "funcion ángulo"
+set xlabel "tiempo (t)" 
+set ylabel "ángulo (radianes)" 
+set grid
+set style data linespoints
+cd '/home/captop/ejercicio_docker/EXAMENRETRASADA' 
+plot "angulovstiempo" u 2:1 ps 1

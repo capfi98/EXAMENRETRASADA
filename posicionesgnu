@@ -1,0 +1,11 @@
+unset label
+clear 
+set terminal jpeg
+set output "posicion.jpeg"
+set title "funcion posición"
+set xlabel "tiempo (t)" 
+set ylabel "posicion (m)" 
+set grid
+set style data linespoints
+cd '/home/captop/ejercicio_docker/retra2' 
+plot "posiciones" u 1:2 , 1.979758*x -2.942849 

@@ -1,0 +1,11 @@
+unset label
+clear 
+set terminal jpeg
+set output "posicion.jpeg"
+set title "funcion posición"
+set xlabel "X (u)" 
+set ylabel "Y (u)" 
+set grid
+set style data linespoints
+cd '/home/captop/ejercicio_docker/EXAMENRETRASADA' 
+plot "posiciones" u 1:2 ps 1
